@@ -1,0 +1,99 @@
+body {
+	margin: 0;
+	padding: 0;
+	font-family: "Montserrat", sans-serif;
+	background-color: rgb(245, 245, 245);
+}
+a {
+	text-decoration: none;
+	color: black;
+}
+.logo__dashboard {
+	margin-bottom: 5px;
+}
+.admin__container {
+	max-width: 850px;
+	margin: 0 auto;
+}
+.admin__header_row {
+	display: flex;
+	justify-content: space-between;
+	align-items: center;
+}
+.admin__header_exit:hover {
+	border-bottom: 1px solid black;
+}
+.admin__header {
+	margin-bottom: 25px;
+	background-color: #fff;
+	padding: 20px 0;
+	box-shadow: 0px 4px 8px rgba(196, 196, 196, 0.5);
+}
+.admin__check_icon {
+	transition: 0.3s;
+	border-radius: 60%;
+}
+.admin__check_icon:hover {
+	background-color: rgb(200, 200, 200);
+}
+
+.admin-table {
+	min-width: 850px;
+	margin: 0 auto;
+	text-align: center;
+	border-collapse: collapse;
+	font-size: 18px;
+	margin-bottom: 35px;
+}
+.admin-table th {
+	font-size: 20px;
+	padding-bottom: 10px;
+}
+.admin-table tr {
+	border-bottom: 2px solid black;
+	box-sizing: border-box;
+}
+.admin-table td {
+	padding: 10px 0;
+}
+
+@media (max-width: 900px) {
+	.admin-table {
+		min-width: 0;
+		width: 100%;
+	}
+	.admin__container {
+		max-width: none;
+		padding: 0 20px;
+	}
+	main {
+		padding: 0 20px;
+	}
+}
+@media (max-width: 767px) {
+	.admin-table th {
+		font-size: 18px;
+		padding-bottom: 10px;
+	}
+	.admin-table {
+		font-size: 16px;
+		margin-bottom: 20px;
+	}
+}
+@media (max-width: 550px) {
+	.admin-table th {
+		font-size: 16px;
+		padding-bottom: 10px;
+	}
+	.admin-table {
+		font-size: 14px;
+		margin-bottom: 20px;
+	}
+	.admin-table td {
+		padding: 10px 5px;
+	}
+	.admin__check_icon {
+		width: 25px;
+		height: 25px;
+	}
+}
