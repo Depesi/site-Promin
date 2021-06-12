@@ -3,7 +3,7 @@
 		<div class="popup__body">
 			<form class="popup__info" action="post.php" method="post">
 				<div class="popup__close">
-					<a href="#"> <img src="./icons/x.svg" alt="Вихід"></a>
+					<a class="cursor-pointer"> <img src="./icons/x.svg" alt="Вихід"></a>
 				</div>
 				<div class="popup__info_title">
 					Залиште свої дані і ми вам передзвонимо
@@ -17,7 +17,7 @@
 				<div class="popup__info_enter">
 					<label for="info__enter_number" class="info__enter_label">
 						<span class="info__over"> Номер телефону </span>
-						<input type="text" id="info__enter_number" class="info__enter" placeholder="0XX..."
+						<input type="text" id="info__enter_number" class="info__enter" placeholder="0XXXXXXXXX"
 							pattern="0[0-9]{9,9}" name="Phone" required>
 					</label>
 				</div>

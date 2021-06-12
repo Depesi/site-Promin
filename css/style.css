@@ -109,6 +109,10 @@ input {
   text-align: center;
 }
 
+.cursor-pointer {
+  cursor: pointer;
+}
+
 /* /ОБЩЕЕ*/
 /* Модальное окно*/
 .popup__feedback {
@@ -221,6 +225,8 @@ input {
 #popup input[type="text"]:focus,
 #popup input[type="tel"]:focus {
   border-color: #4b69c5;
+  -webkit-box-shadow: 0 0 15px rgba(75, 106, 197, 0.75);
+          box-shadow: 0 0 15px rgba(75, 106, 197, 0.75);
 }
 
 #popup input[type="submit"] {
@@ -1081,6 +1087,111 @@ input {
 }
 
 /* /НОВОСТИ */
+/* ПАРАЛАКС*/
+.parallax {
+  height: 560px;
+  background: url("../img/parallax.jpg") center/cover no-repeat fixed;
+  position: relative;
+}
+
+@media (max-width: 991px) {
+  .parallax {
+    height: 450px;
+  }
+}
+
+.parallax__content {
+  position: absolute;
+  top: 50%;
+  left: 50%;
+  -webkit-transform: translateY(-50%) translateX(-50%);
+          transform: translateY(-50%) translateX(-50%);
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-orient: vertical;
+  -webkit-box-direction: normal;
+      -ms-flex-direction: column;
+          flex-direction: column;
+  -webkit-box-pack: center;
+      -ms-flex-pack: center;
+          justify-content: center;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+  min-width: 100%;
+}
+
+@media (max-width: 450px) {
+  .parallax__content {
+    min-width: 90%;
+  }
+}
+
+.parallax__content_logo {
+  text-align: center;
+  color: #fff;
+  font-weight: 600;
+  font-size: 36px;
+  letter-spacing: 1px;
+  line-height: 50px;
+  color: #ebebeb;
+  text-shadow: 0px 6px 14px #000000;
+  margin-bottom: 70px;
+}
+
+@media (max-width: 1140px) {
+  .parallax__content_logo {
+    margin-bottom: 50px;
+  }
+}
+
+@media (max-width: 991px) {
+  .parallax__content_logo {
+    font-size: 32px;
+    line-height: normal;
+    margin-bottom: 50px;
+  }
+}
+
+@media (max-width: 575px) {
+  .parallax__content_logo {
+    font-size: 30px;
+    margin-bottom: 35px;
+  }
+}
+
+@media (max-width: 450px) {
+  .parallax__content_logo {
+    font-size: 26px;
+    margin-bottom: 25px;
+  }
+}
+
+.parallax__content_feedback {
+  display: inline-block;
+  padding: 15px 35px;
+  font-weight: 500;
+  font-size: 22px;
+  color: #fff;
+  background: #6b8fff;
+  border-radius: 30px;
+  -webkit-transition: 300ms;
+  transition: 300ms;
+}
+
+.parallax__content_feedback:hover {
+  background: #4b69c5;
+}
+
+@media (max-width: 450px) {
+  .parallax__content_feedback {
+    padding: 12px 35px;
+    font-size: 18px;
+  }
+}
+
+/* /ПАРАЛАКС*/
 /* ДОСТИЖЕНИЯ*/
 .achievements {
   margin-bottom: 10px;

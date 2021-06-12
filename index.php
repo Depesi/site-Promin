@@ -34,7 +34,8 @@
 	 <?php require('./components/main/headerFullscreen.php'); ?>	
 	 <main class="content" id="arrow">  
 	 	<?php require('./components/main/aboutClub.php'); ?>	
-		 <?php require('./components/main/newsClub.php'); ?>	
+		<?php require('./components/main/newsClub.php'); ?>	
+		<?php require('./components/main/parallax.php'); ?>	
 		<?php require('./components/main/achievments.php'); ?>	
 		<?php require('./components/main/slider.php'); ?>	
 		<?php require('./components/main/codex.php'); ?>	

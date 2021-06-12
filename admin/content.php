@@ -21,10 +21,8 @@
 					<div class="logo__dashboard">
 						Панель адміністратора 
 					</div> 
-					<span class="logo__name">"Промінь"  </span>
-					
+					<span class="logo__name">"Промінь"  </span>					
 				</div>
-				
 				<div> 
 					<a href="/diplom_&_sitePromin/admin/" class="admin__header_exit"> Вихід </a> 
 				</div>
@@ -49,7 +47,8 @@ $sql = "SELECT * FROM feedbackrequest";
                 	echo "<th>Ім'я</th>";
                 	echo "<th>Телефон</th>";
                 	echo "<th>Статус</th>";
-					echo "<th>Відмітка</th>";
+					echo "<th></th>";
+					//echo "<th>Відмітка</th>";
         	    echo "</tr>";
       	 		while($row = mysqli_fetch_array($result)){
 					$row_userId = $row['userId'];
@@ -67,7 +66,7 @@ $sql = "SELECT * FROM feedbackrequest";
             		echo "</tr>";
         		}
         	echo "</table>";
-       		// Free result set
+       		
         	mysqli_free_result($result);
     	} else{
         	echo "No records matching your query were found.";
