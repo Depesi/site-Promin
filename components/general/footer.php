@@ -16,8 +16,8 @@
 						<div class="footer__social">
 							<a href="https://www.instagram.com/_promin_life_/?hl=ru" target="_blank" class="footer__social_item"><img
 									src="./icons/inst.svg" alt="Інстаграм"></a>
-							<a href="https://www.instagram.com/_promin_life_/?hl=ru" target="_blank" class="footer__social_item"><img
-									src="./icons/facebook.svg" alt="Фейсбук"></a>
+							<!-- <a href="https://www.instagram.com/_promin_life_/?hl=ru" target="_blank" class="footer__social_item"><img
+									src="./icons/facebook.svg" alt="Фейсбук"></a> -->
 						</div>
 					</div>
 				</div>
